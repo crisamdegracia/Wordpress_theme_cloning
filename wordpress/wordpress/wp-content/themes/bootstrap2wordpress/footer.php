@@ -16,7 +16,10 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/bootstrap/js/bootstrap.min.js"></script>
 <script src="/wordpress/wordpress/wp-content/plugins/video-background/js/vidbg.js"></script>
 <script src="/wordpress/wordpress/wp-content/plugins/video-background/js/vidbg-backend-min.js"></script>
-
+<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/fittext/jquery.fittext.js"></script>
+<script>
+  jQuery("#responsive_headline").fitText(1.2,{ minFontSize: '23px', maxFontSize: '60px' });
+</script>
 <?php wp_footer();  ?>
 
 

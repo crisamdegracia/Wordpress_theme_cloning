@@ -8,31 +8,27 @@ get_header();
 ?>
 
 
-
-
-
-
-<!-- CAROUSEL SECTION -->		
-
-<!--
--->
-
-
-
 <!--VIDEO BACKGROUND -->
 
 <div class="container-fluid"  id="x">
 	<div class="video-header">
-		<h1> Welcome To Sushi Boutique</h1>
+		<h1 id="responsive_headline"> Welcome To  Sushi Boutique</h1>
 	</div>
 </div>
 
-<div class="container py-5">
-	<div  id="primary" >
+<!--Grid Images -->
+
+	<section id="grid">
+		<div class="container-fluid">
+			<?php 	while ( have_posts() ) : the_post();
+
+			the_content();
+
+			endwhile; // End of the loop. ?>
+
+		</div>
 
 
-	</div><!--primary-->
-</div><!--container-->
+</section>
 
-
-<?php get_footer() ?>
+		<?php get_footer() ?>

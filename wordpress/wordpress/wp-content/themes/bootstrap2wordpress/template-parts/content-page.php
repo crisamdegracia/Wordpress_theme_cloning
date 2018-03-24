@@ -15,15 +15,18 @@
 	</header><!-- .entry-header -->
 
 	<?php bootstrap2wordpress_post_thumbnail(); ?>
-
+	
 	<div class="entry-content">
+	
+	<h1>WAHAHAH</h1>
 		<?php
-			the_content();
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bootstrap2wordpress' ),
-				'after'  => '</div>',
-			) );
+//			the_content();
+//
+//			wp_link_pages( array(
+//				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bootstrap2wordpress' ),
+//				'after'  => '</div>',
+//			) );
+		the_content();
 		?>
 	</div><!-- .entry-content -->
 

@@ -27,19 +27,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+## Links
+## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
-	## Posts and pages
-	## Comments
+## Posts and pages
+## Comments
 # Infinite scroll
 # Media
-	## Captions
-	## Galleries
+## Captions
+## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -48,6 +48,7 @@ html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+	background: #111;
 }
 
 body {
@@ -152,6 +153,7 @@ figure {
 }
 
 hr {
+	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
 	height: 0;
 }
@@ -212,6 +214,7 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
 }
@@ -327,6 +330,7 @@ big {
 # Elements
 --------------------------------------------------------------*/
 html {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -334,6 +338,7 @@ html {
 *:before,
 *:after {
 	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
 	box-sizing: inherit;
 }
 
@@ -482,95 +487,38 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
+/*
 a {
 	color: royalblue;
+	text-decoration: none;
 }
 
 a:visited {
 	color: purple;
+	text-decoration: none;
 }
 
 a:hover, a:focus, a:active {
 	color: midnightblue;
+	text-decoration: none;
 }
 
 a:focus {
 	outline: thin dotted;
+	text-decoration: none;
 }
 
 a:hover, a:active {
 	outline: 0;
+	color: #dd5638;
+	text-decoration: none;
 }
+*/
 
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-}
 
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -601,6 +549,7 @@ a:hover, a:active {
 .screen-reader-text {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
 	clip-path: inset(50%);
 	height: 1px;
 	margin: -1px;
@@ -614,8 +563,10 @@ a:hover, a:active {
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
+	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
+	-webkit-clip-path: none;
 	clip-path: none;
 	color: #21759b;
 	display: block;
@@ -850,4 +801,136 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+
+
+/*================================
+THEME STYLE
+==================================*/
+
+
+/* NAVBAR */
+.navbar-nav > li.current_page_item a,
+.navbar-nav > li.current_page_parent a {
+/*	color: #dd5638 ;*/
+	color: #D4AF37;
+	
+}
+
+
+a:hover 
+
+a:-moz-any-link {
+	text-decoration: none;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
+a:-moz-any-link {
+	text-decoration: none;
+}
+
+a:any-link {
+	text-decoration: none;
+}
+nav {
+	margin-top: 20px;
+	background: rgba(0,0,0, 0.3);
+	
+}
+.navbar-toggler {
+	color: #ddd;
+	border: 1px solid green;
+}
+.navbar-toggler-icon {
+	color: ;
+	border: 1px solid red;
+}
+#header_logo {
+	height: 30px;
+	width: 30px;
+	border-radius: 30px;
+}
+
+/*GENERAL*/
+a:-webkit-any-link {
+	text-decoration: none;
+}
+#navbar a:hover {
+	color: #dd5638 ;
+}
+p , a  {
+	-webkit-font-smoothing:antialiased;
+	text-rendering: optimizeLegibility;
+	
+}
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing:antialiased;
+	text-rendering: optimizeLegibility;
+	font-weight: bold;
+
+}
+
+/* VIDEO BACKGROUND */
+/* x is the container of video background */
+#x {	
+	height: 450px;
+	padding: 0;
+}
+.video-header {
+	text-align: center;
+	color: #fff;
+	background: rgba(0,0,0,.6);
+	height: 100%;
+	width: 100%;
+}
+.video-header h1 {
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	color: #D4AF37;
+	font-weight: 100;
+	padding-top: 50px;
+}
+
+/* Photo  Grid Section */
+
+#grid {
+	background: #222;
+	padding: 30px;
+}
+#grid .row {
+/*	background: #444;*/
+	padding: 20px 10px;
+	margin: 20px 5px;
+}
+
+#grid .row img {
+	margin: 5px;
+}
+
+
+/* CAROUSEL*/
+
+#carousel-container {
+	margin-top: 55px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffd89b), to(#19547b));
+	background: linear-gradient(#ffd89b, #19547b);
+}
+
+.carousel-item img  {
+	height: 400px;
+	width: 100%;
+	position: relative;
+}
+
+.carousel-item img::before {
+ background-color: rgba(0, 0, 0, 0.37);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
