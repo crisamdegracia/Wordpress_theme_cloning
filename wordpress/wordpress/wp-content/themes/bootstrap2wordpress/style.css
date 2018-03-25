@@ -83,92 +83,6 @@ audio:not([controls]) {
 	height: 0;
 }
 
-[hidden],
-template {
-	display: none;
-}
-
-a {
-	background-color: transparent;
-}
-
-a:active,
-a:hover {
-	outline: 0;
-}
-
-abbr[title] {
-	border-bottom: 1px dotted;
-}
-
-b,
-strong {
-	font-weight: bold;
-}
-
-dfn {
-	font-style: italic;
-}
-
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
-
-mark {
-	background: #ff0;
-	color: #000;
-}
-
-small {
-	font-size: 80%;
-}
-
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup {
-	top: -0.5em;
-}
-
-sub {
-	bottom: -0.25em;
-}
-
-img {
-	border: 0;
-}
-
-svg:not(:root) {
-	overflow: hidden;
-}
-
-figure {
-	margin: 1em 40px;
-}
-
-hr {
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-	height: 0;
-}
-
-pre {
-	overflow: auto;
-}
-
-code,
-kbd,
-pre,
-samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
 
 button,
 input,
@@ -261,38 +175,11 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-optgroup,
-textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
-}
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
-p {
-	margin-bottom: 1.5em;
-}
-
-dfn, cite, em, i {
-	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
 
 pre {
 	background: #eee;
@@ -347,55 +234,7 @@ body {
 	/* Fallback for when there is no custom background color defined. */
 }
 
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
-}
 
-ul, ol {
-	margin: 0 0 1.5em 3em;
-}
-
-ul {
-	list-style: disc;
-}
-
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin: 0 1.5em 1.5em;
-}
-
-img {
-	height: auto;
-	/* Make sure images are scaled correctly. */
-	max-width: 100%;
-	/* Adhere to container width. */
-}
-
-figure {
-	margin: 1em 0;
-	/* Extra wide images within figure tags don't overflow the content area. */
-}
-
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
 
 /*--------------------------------------------------------------
 # Forms
@@ -519,6 +358,7 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 
+/*
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -541,6 +381,7 @@ a:hover, a:active {
 	text-align: right;
 	width: 50%;
 }
+*/
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -815,12 +656,18 @@ THEME STYLE
 .navbar-nav > li.current_page_item a,
 .navbar-nav > li.current_page_parent a {
 /*	color: #dd5638 ;*/
-	color: #D4AF37;
+	color: #D4AF37;  
 	
 }
 
-
-a:hover 
+.navbar-nav .menu-item a {
+	font-weight: 800;
+	color: aliceblue ;
+	padding: 10px;
+}
+#navbar a:hover {
+	color: #dd5638 ;
+}
 
 a:-moz-any-link {
 	text-decoration: none;
@@ -838,18 +685,11 @@ a:any-link {
 	text-decoration: none;
 }
 nav {
-	margin-top: 20px;
+	margin-top: 40px;
 	background: rgba(0,0,0, 0.3);
 	
 }
-.navbar-toggler {
-	color: #ddd;
-	border: 1px solid green;
-}
-.navbar-toggler-icon {
-	color: ;
-	border: 1px solid red;
-}
+
 #header_logo {
 	height: 30px;
 	width: 30px;
@@ -860,14 +700,9 @@ nav {
 a:-webkit-any-link {
 	text-decoration: none;
 }
-#navbar a:hover {
-	color: #dd5638 ;
-}
-p , a  {
-	-webkit-font-smoothing:antialiased;
-	text-rendering: optimizeLegibility;
-	
-}
+
+
+p , a ,
 h1,h2,h3,h4,h5,h6 {
 	-webkit-font-smoothing:antialiased;
 	text-rendering: optimizeLegibility;
@@ -893,6 +728,10 @@ h1,h2,h3,h4,h5,h6 {
 	color: #D4AF37;
 	font-weight: 100;
 	padding-top: 50px;
+}
+
+#responsive_headline {
+	padding-top: 20%;
 }
 
 /* Photo  Grid Section */
@@ -933,4 +772,32 @@ h1,h2,h3,h4,h5,h6 {
   height: 100%;
   position: absolute;
   width: 100%;
+}
+
+
+/*
+
+FOOTER
+all footer styles are in this section
+
+*/
+
+footer {
+	background: -webkit-gradient(linear,left top, left bottom,from(#000428),to(#004e92));
+	background: linear-gradient(#000428,#004e92);
+	padding: 100px;
+	text-align: center;
+}
+
+footer .fa {
+	font-size: 20px;
+	padding: 10px;
+}
+
+footer h4 {
+	font-family: cursive;
+}
+
+.footer_ul .menu-item {
+	display: block;
 }

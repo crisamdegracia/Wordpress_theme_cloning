@@ -18,23 +18,35 @@
 <script src="/wordpress/wordpress/wp-content/plugins/video-background/js/vidbg-backend-min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/fittext/jquery.fittext.js"></script>
 <script>
-  jQuery("#responsive_headline").fitText(1.2,{ minFontSize: '23px', maxFontSize: '60px' });
+	jQuery("#responsive_headline").fitText(1.2,{ minFontSize: '23px', maxFontSize: '60px' });
 </script>
+
 <?php wp_footer();  ?>
 
+<footer>
+	<div class="container">
+		<div class="row">
 
-<footer id="colophon" class="site-footer">
-	<div class="site-info">
-		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bootstrap2wordpress' ) ); ?>"><?php
-			/* translators: %s: CMS name, i.e. WordPress. */
-			printf( esc_html__( 'Proudly powered by %s', 'bootstrap2wordpress' ), 'WordPress' );
-			?></a>
-		<span class="sep"> | </span>
-		<?php
-		/* translators: 1: Theme name, 2: Theme author. */
-		printf( esc_html__( 'Theme: %1$s by %2$s.', 'bootstrap2wordpress' ), 'bootstrap2wordpress', '<a href="https://crisamdegracia.github.io">Sam</a>' );
-		?>
-	</div><!-- .site-info -->
+			<?php
+			wp_nav_menu( array(
+
+				'theme_location'   => 'footer',
+				'container_class'  => 'col-md-6',
+				'menu_class'			 => 'footer_ul'
+			));
+			?>
+			<div class="col-md-6">
+				<h4>Follow us!</h4>
+				<div class="d-inline footer-fa-icon">
+					<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+				</div>
+				<div class="d-inline footer-fa-icon">
+					<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+
+				</div>
+			</div>
+		</div>
+	</div>
 </footer><!-- #colophon -->
 
 
