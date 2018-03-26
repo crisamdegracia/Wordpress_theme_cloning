@@ -18,6 +18,7 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/js/jquery-ui/jquery-ui.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Amita|Libre+Baskerville" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:200" rel="stylesheet">
 		<?php wp_head(); ?>
