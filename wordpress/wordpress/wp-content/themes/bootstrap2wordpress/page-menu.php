@@ -4,81 +4,85 @@ get_header();
 ?>
 
 <section  class="top-img-bg" style="background-image: url('<?php bloginfo('template_directory') ?>/assets/img/unsplash/bamboo.jpg')">
-	<h2 class="display-4"><?php the_title(); ?></h2>
+	<h2 class="display-4"> <?php the_title(); ?></h2>
 </section>
 
-<div class="container">
+<?php $loop = new WP_Query( array ( 'post_type' => 'menu_list_categories' , 'orderby' => 'post_id' , 'order' => 'ASC' ) );
 
-	<div id="primary" >
-
-		<div id="tabs">
-			<ul>
-				<li><a href="#tabs-1">Appetizers</a></li>
-				<li><a href="#tabs-2">Soup</a></li>
-				<li><a href="#tabs-3">Salad</a></li>
-				<li><a href="#tabs-4">Sushi</a></li>
-				<li><a href="#tabs-5">Sashimi</a></li>
-
-			</ul>
-			<div id="tabs-1">
-				<ul>
-					<li class="menu-list-item">
-						<h3 class="unstyled">Dumpling</h3>
-						<img class="img-fluid" src="<?php bloginfo('template_directory') ?>/assets/img/unsplash/camera.jpg" alt="" style="height:370px; width:400px">
-					</li>
-					<li class="menu-list-item">Shrimp rolls</li>
-					<li class="menu-list-item">Tempura</li>
-					<li class="menu-list-item">Salmon sticks</li>
-					<li class="menu-list-item">Edamame</li>
-					<li class="menu-list-item">Steamed dumplings</li>
-					<li class="menu-list-item">Shrimp tempura</li>
-					<li class="menu-list-item">Steamed rice</li>
-				</ul>
-			</div>
-			<div id="tabs-2">
-			<ul>
-					<li class="menu-list-item">
-						<h3 class="unstyled">Dumpling</h3>
-						<img class="img-fluid" src="<?php bloginfo('template_directory') ?>/assets/img/unsplash/camera.jpg" alt="" style="height:370px; width:400px">
-					</li>
-					<li class="menu-list-item">Shrimp rolls</li>
-					<li class="menu-list-item">Tempura</li>
-					<li class="menu-list-item">Salmon sticks</li>
-					<li class="menu-list-item">Edamame</li>
-					<li class="menu-list-item">Steamed dumplings</li>
-					<li class="menu-list-item">Shrimp tempura</li>
-					<li class="menu-list-item">Steamed rice</li>
-				</ul>
-			</div>
-			<div id="tabs-3">
-				<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-				<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-			</div>
+?>
 
 
-			<div id="tabs-4">
-				<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+<div id="menu_section_container" class="container-fluid">
+	<!--style="border: 1px solid red"-->
 
-			</div><div id="tabs-5">
-			<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+	<?php while ($loop -> have_posts() ) : $loop->the_post() ;?>
+	
+	<!--The little ex. Appetizer-->
+	<h1> <?php the_title() ; ?></h1>
 
-			</div>
+
+	<div class="menu-category-body  row justify-content-center">
+
+		<?php if( get_field('product_name') ): ?>
+		<div class="col-sm-6 col-md-4 col-lg-3 menu-category-content" style="background-image: url(' <?php echo get_field('product_image')['url'] ?> ')">
+
+			<h3><?php the_field('product_name'); ?> </h3>
+			<h6 class="small"><?php the_field('product_pcs') ?></h6>
+			<?php if( get_field('product_description') ): ?>
+			<p> <?php the_field('product_description') ?></p>
+			<?php endif; ?>
 		</div>
-	</div><!--row-->
+
+		<?php endif; ?>
+
+		<?php if( get_field('product_name_2') ): ?>
+		<div class="col-sm-6 col-md-4  col-lg-3 menu-category-content" style="background-image: url(' <?php echo get_field('product_image_2')['url'] ?> ')">
+
+			<h3><?php the_field('product_name_2'); ?></h3> 
+
+			<h6 class="small"><?php the_field('product_pcs_2') ?></h6>
+
+			<?php if( get_field('product_description_2') ): ?>
+			<p> <?php the_field('product_description_2') ?></p>
+			<?php endif; ?>
+		</div>
+		<?php endif; ?>
+
+		<?php if( get_field('product_name_3') ): ?>
+		<div class="col-sm-6 col-md-4  col-lg-3 menu-category-content" style="background-image: url(' <?php echo get_field('product_image_3')['url'] ?> ')">
+
+			<h3><?php the_field('product_name_3'); ?> </h3>
+			<h6 class="small"><?php the_field('product_pcs_3') ?></h6>
+			<?php if( get_field('product_description_3') ): ?>
+			<p> <?php the_field('product_description_3') ?></p>
+			<?php endif; ?>
+		</div>
+		<?php endif ?>
+
+		<?php if( get_field('product_name_4') ): ?>
+		<div class="col-sm-6 col-md-4  col-lg-3 menu-category-content" style="background-image: url(' <?php echo get_field('product_image_4')['url'] ?> ')">
+
+			<h3><?php the_field('product_name_4'); ?> </h3>
+			<h6 class="small"><?php the_field('product_pcs_4') ?></h6>
+			<?php if( get_field('product_description_4') ): ?>
+			<p> <?php the_field('product_description_4') ?></p>
+			<?php endif; ?>
+		</div>
+		<?php endif ?>
+
+		<?php if( get_field('product_name_5') ): ?>
+		<div class="col-sm-6 col-md-4  col-lg-3 menu-category-content" style="background-image: url(' <?php echo get_field('product_image_5')['url'] ?> ')">
+
+			<h3><?php the_field('product_name_5'); ?> </h3>
+			<h6 class="small"><?php the_field('product_pcs_5') ?></h6>
+			<?php if( get_field('product_description_5') ): ?>
+			<p> <?php the_field('product_description_5') ?></p>
+			<?php endif; ?>
+		</div>
+
+		<?php endif; ?>
+	</div><!--menu-category body-->
+	<?php endwhile ?>
+
 </div><!--container-->
-
-<!--
-
-<h3 id="menu_category_header">Teriyaki</h3>
-<div class="col-sm-3 menu-category">
-<ul class="menu-list">
-<li class="menu-list-item">Dumpling</li>
-<li class="menu-list-item">Shrimp rolls</li>
-<li class="menu-list-item">Tempura</li>
-<li class="menu-list-item">Salmon sticks</li>
-<li class="menu-list-item">Edamame</li>
-</ul>
-</div>
--->
-
 <?php get_footer();
