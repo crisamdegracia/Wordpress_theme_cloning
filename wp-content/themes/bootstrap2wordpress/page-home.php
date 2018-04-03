@@ -9,26 +9,36 @@ get_header();
 
 
 <!--VIDEO BACKGROUND -->
-
-<div class="container-fluid"  id="x">
-	<div class="video-header">
-		<h1 id="responsive_headline"> Sushi Boutique KSA</h1>
+<header class="vcontainer v-header">
+	<div id="x">
+		<video    autoplay muted loop id="myVideo">
+			<source src="<?php bloginfo('template_directory') ?>/assets/vids/bgV3.webm" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
 	</div>
-</div>
+	<div class="header-overlay"></div>
+	<div class="header-content">
+		<h1>Sushi Boutique</h1>
+		<p class="small"> Taste of greatness. </p>
+	<a href="" class="btn">Our Menu</a>
+	</div>
+</header>
 
 <!--Grid Images -->
 
+<!--
 <section id="grid">
-	<div class="container-fluid">
-		<?php 	while ( have_posts() ) : the_post();
+<div class="container-fluid">
+<?php 	while ( have_posts() ) : the_post();
 
-		the_content();
+							the_content();
 
-		endwhile; // End of the loop. ?>
+							endwhile; // End of the loop. ?>
 
-	</div>
+</div>
 
 
 </section>
+-->
 
 <?php get_footer() ?>
