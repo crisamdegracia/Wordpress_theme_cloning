@@ -27,32 +27,66 @@
 
 <?php wp_footer();  ?>
 
-<footer  style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/img/unsplash/top-img-bg.jpg')">
-	<div class="container">
-		<div class="row">
-
-			<?php
-			wp_nav_menu( array(
-
-				'theme_location'   => 'footer',
-				'container_class'  => 'col-md-6',
-				'menu_class'			 => 'footer_ul'
-			));
-			?>
-			<div class="col-md-6">
-				<h4>Follow us!</h4>
-				<div class="d-inline footer-fa-icon">
-					<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-				</div>
-				<div class="d-inline footer-fa-icon">
-					<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-
-				</div>
-			</div>
+<footer id="footer">
+	<div class="container-fluid" >
+		<div class="footer-col">
+			<h3>FACTS</h3>
+			<p>This is an online menu. we do not offer shopping experience instead you can use this to see the list of our food. if you have questions, bulk of orders, reservations, suggestions, parties and events  please contact us!</p>
 		</div>
-	</div>
-</footer><!-- #colophon -->
+		<div class="footer-col">
+			<h4>Follow us</h4>
+			<div class="d-inline footer-fa-icon">
+				<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+			</div>
+			<div class="d-inline footer-fa-icon">
+				<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
 
+			</div>
+		</div><!--footer-col-->
+
+		<div class="footer-col">
+			<h3>Contact Information</h3>
+			<p>Diplomatic Quarter - Riyadh, KSA</p>
+			<p>Tel: 011 4810569 ; 011 4810621</p>
+		</div>
+
+
+
+		<div class="footer-col">
+			<div id="map"></div>
+		</div>
+
+		<?php
+		wp_nav_menu( array(
+
+			'theme_location'   => 'footer',
+			'container_class'  => 'footer-col',
+			'menu_class'			 => 'footer_ul'
+		));			?>
+
+	</div>
+	
+	<div class="footer-col">
+		<p>WEB MASTER  |  KodePH </p>
+	</div>
+</footer>
+
+
+<script>	
+	function initMap() {
+		var uluru = {lat: 24.6852854, lng: 46.625648};
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 18,
+			center: uluru
+		});
+		var marker = new google.maps.Marker({
+			position: uluru,
+			map: map
+
+		});
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-rsOXjG5-vXQEjd-YFC4zBBEEAb8tl6w&libraries=places&callback=initMap" async defer></script>
 
 <script type="text/javascript">
 
@@ -62,7 +96,6 @@
 	menu_category_body.hide();
 	menu_category_h1.click(function(){
 		$(this).next().fadeToggle();
-//		$(this).next().slideDown();
 	})
 
 </script>
