@@ -1,0 +1,83 @@
+[33mcommit 0fbe4a40766e9a9b250187ee92aa0141dd4474d8[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Thu Apr 12 03:41:16 2018 +0300
+
+    menu category : toggling works
+
+[33mcommit d6efe9bf4e8084a1199b6766b51198531e760ac7[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Mon Apr 9 03:26:59 2018 +0300
+
+    playing menu items UI looking awesome!
+
+[33mcommit fe988f86d5b00de65d734bde8682619b9af95489[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Thu Apr 5 03:25:58 2018 +0300
+
+    added sections: customer reviews, services and footer
+
+[33mcommit 500bc6f4befbf5757d8a73237c4c94b22717d6f9[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Wed Apr 4 03:24:54 2018 +0300
+
+    my footer is feeling cool right now!
+
+[33mcommit 81e2e640a8edd5be6c38d60c64ce222553a977e7[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Tue Apr 3 04:14:28 2018 +0300
+
+    playing video background
+
+[33mcommit 5e9fee4e536c5cbc54eb929050f02fdf9c90fb69[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Sat Mar 31 02:57:56 2018 +0300
+
+    modified root folder location, added functionalities for the menu categories
+
+[33mcommit 9e3b3f0e6bf603ad7b9d00872829aa3e744a9a66[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Fri Mar 30 04:13:17 2018 +0300
+
+    playing category menu grid
+
+[33mcommit b616d9b48d42c02a6b0fd2338dd4158f8c8d3145[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Tue Mar 27 02:14:19 2018 +0300
+
+    trial and error menu page
+
+[33mcommit 2b057cf89ce7663e34d862f4963bdba55e075d0c[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Mon Mar 26 02:42:53 2018 +0300
+
+    setting up the page-menu
+
+[33mcommit b5b314b69cc6d8310274ae2d8bc69bdf4298632a[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Sun Mar 25 03:01:39 2018 +0300
+
+    modified: styles , page-home and header
+
+[33mcommit 0c640c1f802ed88133501236dc0723ea88d01355[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Sat Mar 24 03:05:34 2018 +0300
+
+    grid gallery plugin added
+
+[33mcommit 2e27f074093fd937237b6c2d9aa266ba6c0e555f[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Wed Mar 21 02:41:21 2018 +0300
+
+    initial commit: modifying video background
+
+[33mcommit 115861de7976e436aaae1b038eb9c0689f1ff1ca[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Sun Mar 18 03:01:54 2018 +0300
+
+    initial commit
+
+[33mcommit 313b531dd5b4e4e04334c2b11d78080e182267f3[m
+Author: Sam <crisamdegracia@gmail.com>
+Date:   Sun Mar 18 02:18:32 2018 +0300
+
+    :boom::camel: Added .gitattributes & .gitignore files
