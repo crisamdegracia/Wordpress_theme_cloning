@@ -21,10 +21,10 @@
 <?php wp_footer();  ?>
 
 <footer id="footer">
-    <div class="container-fluid" >
+    <div class="container-fluid">
         <div class="footer-col">
             <h3>FACTS</h3>
-            <p>This is an online menu. we do not offer shopping experience instead you can use this to see the list of our food. if you have questions, bulk of orders, reservations, suggestions, parties and events  please contact us!</p>
+            <p>This is an online menu. we do not offer shopping experience instead you can use this to see the list of our food. if you have questions, bulk of orders, reservations, suggestions, parties and events please contact us!</p>
         </div>
         <div class="footer-col">
             <h4>Follow us</h4>
@@ -35,12 +35,11 @@
                 <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
 
             </div>
-        </div><!--footer-col-->
+        </div>
+        <!--footer-col-->
         <div class="footer-col">
             <h3>Business Hours</h3>
-            <p>Mon~Thu: 12:00 AM ~ 11:30 PM 
-                Fri: 1:30 PM ~ 11:30 PM 
-                Sat-Sun: 12:00 PM~11:30 PM</p>
+            <p>Mon~Thu: 12:00 AM ~ 11:30 PM Fri: 1:30 PM ~ 11:30 PM Sat-Sun: 12:00 PM~11:30 PM</p>
         </div>
 
 
@@ -67,15 +66,20 @@
     </div>
 
     <div class="footer-col">
-        <p>WEB MASTER  |  KodePH </p>
-      
+        <p>WEB MASTER | KodePH </p>
     </div>
+    <?php  /*get_template_part( 'template-parts/content', 'translator' )*/
+    echo do_shortcode('[gtranslate]'); 
+    ?>
 </footer>
 
 
-<script>	
+<script>
     function initMap() {
-        var uluru = {lat: 24.6852854, lng: 46.625648};
+        var uluru = {
+            lat: 24.6852854,
+            lng: 46.625648
+        };
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 14,
             center: uluru
@@ -85,14 +89,15 @@
             map: map
         });
     }
+
 </script>
 
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-rsOXjG5-vXQEjd-YFC4zBBEEAb8tl6w&libraries=places&callback=initMap" async defer></script>
 
 <script type="text/javascript">
-    var menu_category_h1		= $('#menu_section_container h1'),
-        menu_category_body 	= $('.menu-category-body'),
+    var menu_category_h1 = $('#menu_section_container h1'),
+        menu_category_body = $('.menu-category-body'),
         menu_category_text = $('.menu-category-text'),
         menu_category_content = $('.menu-category-content')
 
@@ -100,65 +105,26 @@
     menu_category_content.append('<div class="menu-pop-btn"><i class="menu-fas fa fa-eye"></i></div>');
     menu_category_viewed = $('.menu-fas');
     menu_pop_btn = $('.menu-pop-btn');
-    
-    /* The icon that makes the categories toggles.*/
+
     menu_category_body.prepend('<i class="toggle-categories fa fa-arrow-circle-up"></i>');
-    toggle_categories			= $('.toggle-categories')
+    toggle_categories = $('.toggle-categories')
 
 
-<<<<<<< HEAD
     menu_category_body.hide();
     menu_category_text.hide();
 
-    menu_category_h1.click(function(){
+    menu_category_h1.click(function() {
         $(this).next().slideToggle();
     })
 
-    toggle_categories.click(function(){
+    toggle_categories.click(function() {
 
         $(this).parent().fadeToggle();
 
     })
-=======
-	var menu_category_h1		= $('#menu_section_container h1'),
-			menu_category_body 	= $('.menu-category-body'),
-			menu_category_text = $('.menu-category-text'),
-			menu_category_content = $('.menu-category-content')
-			
-			
-	menu_category_content.append('<div class="menu-pop-btn"><i class="menu-fas fa fa-eye"></i></div>');
-	menu_category_viewed = $('.menu-fas');
-	menu_pop_btn = $('.menu-pop-btn');
-	
-	menu_category_body.prepend('<i class="toggle-categories fa fa-arrow-circle-up"></i>');
-	toggle_categories			= $('.toggle-categories')
-	
-	
-	menu_category_body.hide();
-	menu_category_text.hide();
-	
-	menu_category_h1.click(function(){
-			$(this).next().slideToggle();
-	})
-	
- 	toggle_categories.click(function(){
-		
-		$(this).parent().fadeToggle();
-		
-	})
- 
 
-	menu_pop_btn.click(function(){
-		
-		/* looking for the content of the items of the menu */
-		$(this).parent().find(menu_category_text).slideToggle();
-		
-		/* toggles the eye icons */
-		$(this).find('i').toggleClass('fa-eye-slash')
-	})
->>>>>>> 0fbe4a40766e9a9b250187ee92aa0141dd4474d8
 
-    menu_pop_btn.click(function(){
+    menu_pop_btn.click(function() {
 
         /* looking for the content of the items of the menu */
         $(this).parent().find(menu_category_text).slideToggle();
@@ -166,9 +132,10 @@
         /* toggles the eye icons */
         $(this).find('i').toggleClass('fa-eye-slash')
     })
+
 </script>
 
 
-
 </body>
+
 </html>
