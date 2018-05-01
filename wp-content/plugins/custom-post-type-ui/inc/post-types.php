@@ -177,7 +177,7 @@ function cptui_manage_post_types() {
 			 * @param string $value Text to use for the button.
 			 */
 			?>
-			<input type="submit" class="button-secondary" name="cptui_select_post_type_submit" value="<?php echo esc_attr( apply_filters( 'cptui_post_type_submit_select', __( 'Select', 'custom-post-type-ui' ) ) ); ?>" />
+			<input type="submit" class="button-secondary" id="cptui_select_post_type_submit" name="cptui_select_post_type_submit" value="<?php echo esc_attr( apply_filters( 'cptui_post_type_submit_select', __( 'Select', 'custom-post-type-ui' ) ) ); ?>" />
 		</form>
 	<?php
 
@@ -1595,7 +1595,7 @@ function cptui_check_existing_post_type_slugs( $slug_exists = false, $post_type_
 	// If we're this far, it's false.
 	return $slug_exists;
 }
-add_filter( 'cptui_post_type_slug_exists', 'cptui_check_existing_post_type_slugs', 10, 3 );
+add_filter( 'cptui_post_type_slug_exists', 'cptui_check_existing_post_type_slugs', 30, 3 );
 
 /**
  * Checks if the slug matches any existing page slug.
