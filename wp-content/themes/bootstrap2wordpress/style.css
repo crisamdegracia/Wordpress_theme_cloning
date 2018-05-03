@@ -954,7 +954,7 @@ MENUS
 
 .menu-category-eng {
     position: absolute;
-    top: 14%;
+    top: -2%;
     font-size: calc(1vw + .7vh + .5vmin);
     font-weight: 800;
     color: #dd5638;
@@ -962,9 +962,9 @@ MENUS
 
 .menu-category-text p {
     position: absolute;
-    top: 30%;
+    top: 15%;
     line-height: 100%;
-    font-size: calc(.8vw + .4vh + .5vmin);
+    font-size: calc(.7vw + .3vh + .5vmin);
 }
 
 .menu-category-content .card-title {
@@ -1155,13 +1155,13 @@ footer h3 {
         padding: 0 2px;
     }
     .menu-category-text h6 {
-        font-size: .4vh;
+        font-size: .7em;
         position: absolute;
         left: 50%;
         bottom: 2%;
     }
     .menu-category-text p {
-        font-size: .7em;
+        font-size: .6em;
     }
 
     #reviews {

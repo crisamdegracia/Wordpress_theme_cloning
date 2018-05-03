@@ -37,7 +37,7 @@
                     Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description') ?>
                 </p>
@@ -86,7 +86,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description_2') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description_2') ?>
                 </p>
@@ -134,7 +134,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description_3') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description_3') ?>
                 </p>
@@ -183,7 +183,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description_4') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description_4') ?>
                 </p>
@@ -232,7 +232,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description_5') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description_5') ?>
                 </p>
@@ -281,7 +281,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description_6') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description_6') ?>
                 </p>
@@ -331,7 +331,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description_7') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description_7') ?>
                 </p>
@@ -379,7 +379,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description_8') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description_8') ?>
                 </p>
@@ -427,7 +427,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description_9') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description_9') ?>
                 </p>
@@ -475,7 +475,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('product_description_10') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('product_description_10') ?>
                 </p>
@@ -525,7 +525,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description') ?>
                 </p>
@@ -576,7 +576,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description_2') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description_2') ?>
                 </p>
@@ -628,7 +628,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description_3') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description_3') ?>
                 </p>
@@ -679,7 +679,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description_4') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description_4') ?>
                 </p>
@@ -730,7 +730,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description_5') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description_5') ?>
                 </p>
@@ -782,7 +782,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description_6') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description_6') ?>
                 </p>
@@ -834,7 +834,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description_7') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description_7') ?>
                 </p>
@@ -886,7 +886,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description_8') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description_8') ?>
                 </p>
@@ -938,7 +938,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description_9') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description_9') ?>
                 </p>
@@ -992,7 +992,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms2_product_description_10') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms2_product_description_10') ?>
                 </p>
@@ -1043,7 +1043,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description') ?>
                 </p>
@@ -1094,7 +1094,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description_2') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description_2') ?>
                 </p>
@@ -1146,7 +1146,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description_3') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description_3') ?>
                 </p>
@@ -1197,7 +1197,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description_4') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description_4') ?>
                 </p>
@@ -1248,7 +1248,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description_5') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description_5') ?>
                 </p>
@@ -1300,7 +1300,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description_6') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description_6') ?>
                 </p>
@@ -1352,7 +1352,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description_7') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description_7') ?>
                 </p>
@@ -1404,7 +1404,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description_8') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description_8') ?>
                 </p>
@@ -1456,7 +1456,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description_9') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description_9') ?>
                 </p>
@@ -1510,7 +1510,7 @@
                 <?php /*Check if product descrition exist*/ ?>
                 <?php if( get_field('ms3_product_description_10') ): ?>
 
-                <div class="menu-category-eng">Eng:</div>
+                <div class="menu-category-eng">description:</div>
                 <p class="card-text">
                     <?php the_field('ms3_product_description_10') ?>
                 </p>

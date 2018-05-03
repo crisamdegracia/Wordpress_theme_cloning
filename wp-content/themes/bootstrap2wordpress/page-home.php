@@ -17,9 +17,9 @@ get_header();
         </video>
         <div class="header-overlay"></div>
         <div class="header-content">
-            <h1>Sushi Boutique</h1>
-            <p class="small"> Taste of greatness. </p>
-            <a class="btn-info" href="/menu">Our Menu</a>
+            <h1> <?php the_field('home_page_title') ?></h1>
+            <p class="small"> <?php the_field('under_the_title') ?> </p>
+            <a class="btn-info" href="/menu"><?php the_field('button_text') ?></a>
         </div>
     </div>
 
@@ -29,21 +29,41 @@ get_header();
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner reviews-container">
                     <div class="carousel-item active">
-                        <!--					<img class="d-block w-100" src="" alt="First slide">-->
-                        <h4 class="reviews-name">Mahmood Chaudhry  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
-                        <p class="blockquote reviews-comments"> Great food especially pastas, pizzas and sushi. My children love their food. Location is also very good. Service quality is very good as well. I have never been to any other restaurant as much as I have been to this one.</p>
+                        <h4 class="reviews-name"><?php the_field('comment_name') ?> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                        <p class="blockquote reviews-comments"><?php the_field('comment_content') ?> </p>
 
                     </div>
                     <div class="carousel-item">
-                        <h4 class="reviews-name">Daniel Mainit  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
-                        <p class="blockquote reviews-comments">It is the place where you can avail japanese food like sushi,and also great italian food.come and visit the restaurant located inside diplomatic quarters riyadh at at fazari plaza.</p>
+                        <h4 class="reviews-name"><?php the_field('comment_name_2') ?> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                        <p class="blockquote reviews-comments"><?php the_field('comment_content_2') ?></p>
 
                     </div>
                     <div class="carousel-item">
-                        <h4 class="reviews-name">Abdullah Al-Darrab  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
-                        <p class="blockquote reviews-comments">Excellent restaurant with great food that is reasonably priced. Will go back many times👍🏻</p>
+                        <h4 class="reviews-name"><?php the_field('comment_name_3') ?>  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                        <p class="blockquote reviews-comments"><?php the_field('comment_content_3') ?></p>
 
                     </div>
+
+                    <?php /*4th item of comment reviews*/ ?>
+                    <?php if( ! empty( the_field('comment_name_4') ) ) : ?>
+                    <div class="carousel-item">
+                        <h4 class="reviews-name"><?php the_field('comment_name_4') ?>  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                        <p class="blockquote reviews-comments"><?php the_field('comment_content_4') ?></p>
+
+                    </div>
+                    <?php endif; ?>
+
+                    <?php /* 5th item of comment reviews*/ ?>
+
+                    <?php if( ! empty( the_field('comment_name_5') ) ) : ?>
+
+                    <div class="carousel-item">
+                        <h4 class="reviews-name"><?php the_field('comment_name_5') ?>  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                        <p class="blockquote reviews-comments"><?php the_field('comment_content_5') ?></p>
+
+                    </div>
+                    <?php endif; ?>
+
                 </div>
             </div>
 
