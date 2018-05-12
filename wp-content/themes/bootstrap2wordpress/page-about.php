@@ -14,21 +14,26 @@ $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-6">
-                <h3 class="display-4">
+            <div class="col-md-4">
+                <h3 class="display-4 ">
                     <?php the_field('about_title_1') ?>
                 </h3>  
                 <p>
                     <?php the_field('about_excerpt_1') ?>
                 </p>
             </div>
-            <div class="col-sm-6">
-                <h3 class="display-4">
+            <div class="col-md-4">
+                <h3 class="display-4 ">
                     <?php the_field('about_title_2') ?>
                 </h3>
                 <p>
                     <?php the_field('about_excerpt_2') ?>
                 </p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="display-4 footer-info-title"><?php the_field('about_title_3') ?></h3>
+                <p><?php the_field('about_excerpt_3') ?></p>
+
             </div>
         </div><!--row-->
     </div><!--container-->

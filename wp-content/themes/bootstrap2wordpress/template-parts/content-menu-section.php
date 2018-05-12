@@ -1,4 +1,4 @@
- <?php $loop = new WP_Query( array ( 'post_type' => 'menu_list_categories' , 'orderby' => 'post_id' , 'order' => 'ASC' ) ); 
+ <?php $loop = new WP_Query( array ( 'post_type' => 'menu_category_a' , 'orderby' => 'post_id' , 'order' => 'ASC' ) ); 
 
     ?>
 

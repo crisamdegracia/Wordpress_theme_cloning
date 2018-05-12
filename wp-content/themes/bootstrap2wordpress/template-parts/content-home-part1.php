@@ -16,7 +16,7 @@
 
     <div id="reviews">
         <div class="container">
-            <h3 class="display-4">Customer Reviews</h3><h6 class="text-muted">Reviews from google</h6>
+            <h3 class="display-4"><?php echo the_field('customer_header_title') ?></h3><h6 class="text-muted"><?php the_field('customer_header_title_from') ?></h6>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner reviews-container">
                     <div class="carousel-item active">

@@ -21,40 +21,35 @@
 <?php wp_footer();  ?>
 
 <footer id="footer">
-    <div class="container-fluid">
-        <div class="footer-col">
-            <h3>FACTS</h3>
-            <p>This is an online menu. we do not offer shopping experience instead you can use this to see the list of our food. if you have questions, bulk of orders, reservations, suggestions, parties and events please contact us!</p>
-        </div>
-        <div class="footer-col">
-            <h4>Follow us</h4>
-            <div class="d-inline footer-fa-icon">
-                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="col-md-12 contact-info">
+                    <h3>Follow us</h3>
+                    <div class="d-inline footer-fa-icon">
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                    </div>
+
+                    <div class="d-inline footer-fa-icon">
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-12 contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Diplomatic Quarter - Riyadh, KSA</p>
+                    <p>Tel: 011 4810569 ; 011 4810621</p>
+                    <h3>Business Hours</h3>
+                    <p>Mon~Thu: 12:00 AM ~ 11:30 PM</p>
+                    <p>Fri: 1:30 PM ~ 11:30 PM </p>
+                    <p> Sat-Sun: 12:00 PM~11:30 PM</p>
+
+                </div>
             </div>
-            <div class="d-inline footer-fa-icon">
-                <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-
+            <div class="col-sm-6">
+                <div id="map"></div>
             </div>
+
         </div>
-        <!--footer-col-->
-        <div class="footer-col">
-            <h3>Business Hours</h3>
-            <p>Mon~Thu: 12:00 AM ~ 11:30 PM Fri: 1:30 PM ~ 11:30 PM Sat-Sun: 12:00 PM~11:30 PM</p>
-        </div>
-
-
-        <div class="footer-col">
-            <h3>Contact Information</h3>
-            <p>Diplomatic Quarter - Riyadh, KSA</p>
-            <p>Tel: 011 4810569 ; 011 4810621</p>
-        </div>
-
-
-
-        <div class="footer-col ">
-            <div id="map"></div>
-        </div>
-
 
         <?php
         wp_nav_menu( array(
@@ -68,11 +63,10 @@
     <div class="footer-col">
         <p>WEB MASTER | KodePH </p>
     </div>
-    <?php  /*get_template_part( 'template-parts/content', 'translator' )*/
+    <?php 
     echo do_shortcode('[gtranslate]'); 
     ?>
 </footer>
-
 
 <script>
     function initMap() {
