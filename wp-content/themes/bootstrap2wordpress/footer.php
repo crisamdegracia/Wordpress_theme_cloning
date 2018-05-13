@@ -62,10 +62,11 @@
 
     <div class="footer-col">
         <p>WEB MASTER | KodePH </p>
-    </div>
-    <?php 
+        <div class="container">     <p> <?php 
     echo do_shortcode('[gtranslate]'); 
-    ?>
+    ?></p></div>
+    </div>
+   
 </footer>
 
 <script>

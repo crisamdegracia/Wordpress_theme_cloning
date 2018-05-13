@@ -7,10 +7,9 @@
     <?php while ($loop -> have_posts() ) : $loop->the_post() ;?>
 
 
-    <h1 class="menu-header-bg" style="background-image: url('<?php echo get_field('menu_category_bg_img')['url'] ?>') ">
-        <?php  the_title() ; ?>
-    </h1>
-
+    <h3 class="menu-section-b">
+            <?php  the_title() ; ?> <span>+</span>
+        </h3>
 
     <div class="menu-category-body  row justify-content-center">
 

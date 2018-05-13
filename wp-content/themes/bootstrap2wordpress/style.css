@@ -884,8 +884,7 @@ MENUS
 =====*/
 
 #menu-page-x {
-    /*    background: url(assets/img/bgblack.jpg)repeat;*/
-    background: #001;
+    background: #00000a;
     padding: 80px 20px 20px 30px;
     text-align: center;
     /*    border: 3px solid green;*/
@@ -901,8 +900,8 @@ MENUS
 #menu_section_container {
     text-align: center;
     /*    height: 100%;*/
-    padding: 30px 0;
-    /*    border: 4px solid red;*/
+    padding: 0;
+/*        border: 4px solid red;*/
 }
 
 .menu-header-bg {
@@ -921,7 +920,7 @@ MENUS
 }
 
 .menu-category-body {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .menu-category-content {
@@ -1034,6 +1033,18 @@ MENUS
     color: #ddd;
 }
 
+.menu-section-b {
+    border: 1px solid ;
+    color: darkgoldenrod;
+    text-align: left;
+    padding: 10px 0 10px 30px;
+    font-weight: 300;
+}
+.menu-section-b span {
+    padding-right: 30px;
+    float: right;
+    color: #fff;
+}
 
 /* ABOUT */
 
@@ -1203,6 +1214,16 @@ footer p {
     }
     .menu-category-text p {
         font-size: .6em;
+    }
+    
+    .menu-section-b {
+        font-size: 1em;
+        padding-left: 10px;
+        
+    }
+    .menu-section-b span {
+        padding-right: 10px;
+        
     }
 
     #reviews {
