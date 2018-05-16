@@ -242,8 +242,8 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    background: #333;
+body { 
+    background: #000;
     /* Fallback for when there is no custom background color defined. */
 }
 
@@ -751,59 +751,20 @@ h5,
 h6 {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    /*	font-weight: bold;*/
 }
 
-/* VIDEO BACKGROUND */
 
-/*video container*/
-
-/* x is the container of video background */
 
 .v-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    left: 0;
-    top: 0;
-}
 
-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: 100%;
-    height: 121%;
-    object-fit: cover;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
+    height: 60vh;
 
-.header-overlay {
-    color: #fff;
-    font-family: 'Oxygen', sans-serif;
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    width: 100%;
-    max-width: 45em;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-    line-height: 1.5;
-    text-align: center;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
 }
 
 .header-content {
     position: absolute;
     left: 3%;
-    top: 10%;
+    top: 10vh;
 }
 
 .header-content h1 {
@@ -834,24 +795,11 @@ a {
     border-radius: 3px;
 }
 
-/* REVIEWS */
 
+/* REVIEWS */
 #reviews {
     text-align: center;
-    position: absolute;
-    bottom: 0vh;
-    border-radius: 5px;
     height: 40vh;
-    overflow: hidden;
-    padding: 0;
-    z-index: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.reviews-container {
-    /* padding: 6px 10px 6px 10px; */
-    /* border: 1px solid red; */
-    /* width: 70vw; */
 }
 
 #reviews h4 {
@@ -871,7 +819,11 @@ a {
 
 #reviews p {
     color: #fff;
-    font-size: calc(1.2vh + 1vw + .5vmin);
+    /*    font-size: calc(1vh + 1vw + .5vmin);*/
+    font-size: 1.3em;
+    font-weight: 200;
+    line-height: inherit;
+    line-height: 1.2;
 }
 
 * {
@@ -887,7 +839,9 @@ MENUS
     background: #00000a;
     padding: 80px 20px 20px 30px;
     text-align: center;
-    /*    border: 3px solid green;*/
+    position: relative;
+    z-index: 3;
+    display: none;
 }
 
 #menu-page-x .menu-header {
@@ -899,19 +853,18 @@ MENUS
 
 #menu_section_container {
     text-align: center;
-    /*    height: 100%;*/
     padding: 0;
-/*        border: 4px solid red;*/
+
 }
 
 .menu-header-bg {
     background-position: center;
     background-size: cover;
     list-style: none;
-    font-size: calc(1.3vw + 2vh + .5vmin);
-    color: darkgoldenrod;
+    font-size: calc(1.4vw + 2.1vh + .5vmin);
+    color: #fff;
     padding: 30px;
-    text-shadow: 0 0 .2em #000;
+    text-shadow: 1px 1px .2em #000000;
     margin-bottom: 30px;
 }
 
@@ -920,12 +873,16 @@ MENUS
 }
 
 .menu-category-body {
-    margin-bottom: 40px;
+    margin-bottom:  40px;
+    /*    display: none;    */
+    /*    padding: 0 0 0 0 !important;*/
+    /*    border: 1px solid red;*/
 }
+
 
 .menu-category-content {
     margin: 7px 0;
-    height: 30vh;
+    height: 40vh;
     padding: 0 15px;
     background: rgba(0, 0, 0, 0.4);
 }
@@ -934,6 +891,7 @@ MENUS
     padding: 0;
     background: darkgoldenrod;
     border-radius: 50px;
+
 
 }
 
@@ -946,7 +904,6 @@ MENUS
 /* container of the menu items */
 
 .menu-category-text {
-    /*	display: none;*/
     position: absolute;
     left: 0;
     bottom: 1px;
@@ -966,7 +923,7 @@ MENUS
     position: absolute;
     top: 15%;
     line-height: 100%;
-    font-size: calc(.7vw + .3vh + .5vmin);
+    font-size: calc( .5vh + 1vw + .5vmin );
 }
 
 .menu-category-content .card-title {
@@ -1001,7 +958,7 @@ MENUS
     bottom: 2%;
 }
 
-.fa-arrow-circle-up {
+.fa-close {
     border-radius: 50px;
     padding: 20px 6px 40px 6px;
     background: #111;
@@ -1009,7 +966,7 @@ MENUS
     height: 30px;
     width: 30px;
     position: fixed;
-    bottom: 3%;
+    bottom: 40%;
     right: 3%;
     z-index: 100;
     color: darkgoldenrod;
@@ -1094,6 +1051,33 @@ MENUS
 LAYOUT
 */
 
+.overlay {
+    height: 180px;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.awesometext {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.awesometext p {
+    color: darkgoldenrod;
+    font-size: 3rem;
+    font-weight: 300;
+    text-shadow: 1px 1px #ddd;
+}
+.spinner {
+    width: 30%;
+    height:30%;
+    border: 4px solid #ddd;
+    border-top: 3px solid darkgoldenrod;
+    border-radius: 100%;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
 #primary {
     padding-top: 50px;
 }
@@ -1103,7 +1087,8 @@ LAYOUT
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 80vh;
+    display: none;
 }
 
 .top-img-bg h2 {
@@ -1155,8 +1140,6 @@ footer h3 {
 
 .footer-col {
     margin: 0 auto;
-/*    width: 80%;*/
- 
 }
 
 footer .contact-info {
@@ -1164,15 +1147,15 @@ footer .contact-info {
 }
 
 footer  h3 {
-   padding-bottom: 1vh;
+    padding-bottom: 1vh;
     font-weight: 300;
 }
 footer p {
-    color: #444;
+    color: #999;
 }
 
 .footer-col p {
-    color: #333;
+    color: #999;
 }
 
 #map {
@@ -1191,7 +1174,7 @@ footer p {
 
 /*  Media Queries   */
 
-@media only screen and (max-width: 600px) {
+@media only screen and ( max-width: 600px ) {
     #menu-page-x .menu-header {
         font-size: calc(1vh + 5vw);
     }
@@ -1213,26 +1196,32 @@ footer p {
         bottom: 2%;
     }
     .menu-category-text p {
-        font-size: .6em;
+        font-size: calc( 1vh +  1vw + .5vmin) ;
     }
-    
+
     .menu-section-b {
         font-size: 1em;
         padding-left: 10px;
-        
+
     }
     .menu-section-b span {
         padding-right: 10px;
-        
+
     }
 
     #reviews {
-        height: 30vh;
+        height: 45vh;
+        padding-top: 5vh;
+
+    }
+    #reviews p {
+        font-size: 1em;
+        line-height: 1.2;
     }
     #service .row div {
         padding: 0 0;
         margin: 0 0;
-       
+
     }
     #service p {
         font-size: .8em;
@@ -1241,5 +1230,39 @@ footer p {
 
     footer h3 {
         font-size: 1.5em;
+    }
+}
+
+
+@media only screen and ( min-width: 980px ) and ( max-width 980px) {
+    
+     .menu-category-text p {
+        font-size: calc( 1vh +  1vw + .5vmin) ;
+    }
+    
+}
+
+
+
+
+/* key frames  */
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }

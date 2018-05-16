@@ -7,9 +7,9 @@
     <?php while ($loop -> have_posts() ) : $loop->the_post() ;?>
 
 
-    <h3 class="menu-section-b">
+    <h1 class="menu-section-b">
             <?php  the_title() ; ?> <span>+</span>
-        </h3>
+        </h1>
 
     <div class="menu-category-body  row justify-content-center">
 

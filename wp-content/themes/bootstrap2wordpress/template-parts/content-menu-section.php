@@ -13,11 +13,11 @@
         </h1>
 
  
-        <div class="menu-category-body  row justify-content-center">
+        <div class="menu-category-body row justify-content-center">
 
             <?php /*Check if the Item exist if theres not the whole table would not not appear */ ?>
             <?php if( get_field('product_name') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3    menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3    menu-category-content">
 
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image')['url'] ) ) { ?>
@@ -45,7 +45,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price') ?>
                     </h4>
                     <?php if( get_field('product_pcs') ): ?>
@@ -62,7 +62,7 @@
             <?php /*============== 2ND ITEM  =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('product_name_2') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image_2')['url'] ) ) { ?>
 
@@ -93,7 +93,7 @@
                     </p>
 
                     <?php endif; ?>
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price_2') ?>
                     </h4>
                     <?php if( get_field('product_pcs_2') ): ?>
@@ -110,7 +110,7 @@
             <?php /*============== 3rd ITEM  =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('product_name_3') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image_3')['url'] ) ) { ?>
 
@@ -142,7 +142,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price_3') ?>
                     </h4>
                     <?php if( get_field('product_pcs_3') ): ?>
@@ -159,7 +159,7 @@
             <?php /*============== 4th ITEM  =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('product_name_4') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image_4')['url'] ) ) { ?>
 
@@ -191,7 +191,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price_4') ?>
                     </h4>
                     <?php if( get_field('product_pcs_4') ): ?>
@@ -208,7 +208,7 @@
             <?php /*============== 5th ITEM  =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('product_name_5') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image_5')['url'] ) ) { ?>
 
@@ -240,7 +240,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price_5') ?>
                     </h4>
                     <?php if( get_field('product_pcs_5') ): ?>
@@ -257,7 +257,7 @@
             <?php /*============== 6th ITEM  =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('product_name_6') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image_6')['url'] ) ) { ?>
 
@@ -289,7 +289,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price_6') ?>
                     </h4>
                     <?php if( get_field('product_pcs_6') ): ?>
@@ -307,7 +307,7 @@
             <?php /*============== 7th ITEM  =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('product_name_7') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image_7')['url'] ) ) { ?>
 
@@ -339,7 +339,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price_7') ?>
                     </h4>
                     <?php if( get_field('product_pcs_7') ): ?>
@@ -355,7 +355,7 @@
             <?php /*============== 8th ITEM  =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('product_name_8') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image_8')['url'] ) ) { ?>
 
@@ -387,7 +387,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price_8') ?>
                     </h4>
                     <?php if( get_field('product_pcs_8') ): ?>
@@ -403,7 +403,7 @@
             <?php /*============== 9th ITEM  =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('product_name_9') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image_9')['url'] ) ) { ?>
 
@@ -435,7 +435,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price_9') ?>
                     </h4>
                     <?php if( get_field('product_pcs_9') ): ?>
@@ -451,7 +451,7 @@
             <?php /*============== 10th ITEM  =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('product_name_10') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('product_image_10')['url'] ) ) { ?>
 
@@ -483,7 +483,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('product_price_10') ?>
                     </h4>
                     <?php if( get_field('product_pcs_10') ): ?>
@@ -501,7 +501,7 @@
             <?php /*============== 1st ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image')['url'] ) ) { ?>
 
@@ -533,7 +533,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs') ): ?>
@@ -552,7 +552,7 @@
             <?php /*============== 2nd ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name_2') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image_2')['url'] ) ) { ?>
 
@@ -584,7 +584,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price_2') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs_2') ): ?>
@@ -604,7 +604,7 @@
             <?php /*============== 3rd ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name_3') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image_3')['url'] ) ) { ?>
 
@@ -636,7 +636,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price_3') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs_3') ): ?>
@@ -655,7 +655,7 @@
             <?php /*============== 4th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name_4') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image_4')['url'] ) ) { ?>
 
@@ -687,7 +687,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price_4') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs_4') ): ?>
@@ -706,7 +706,7 @@
             <?php /*============== 5th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name_5') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image_5')['url'] ) ) { ?>
 
@@ -738,7 +738,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price_5') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs_5') ): ?>
@@ -758,7 +758,7 @@
             <?php /*============== 6th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name_6') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image_6')['url'] ) ) { ?>
 
@@ -790,7 +790,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price_6') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs_6') ): ?>
@@ -810,7 +810,7 @@
             <?php /*============== 7th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name_7') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image_7')['url'] ) ) { ?>
 
@@ -842,7 +842,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price_7') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs_7') ): ?>
@@ -862,7 +862,7 @@
             <?php /*============== 8th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name_8') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image_8')['url'] ) ) { ?>
 
@@ -894,7 +894,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price_8') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs_8') ): ?>
@@ -914,7 +914,7 @@
             <?php /*============== 9th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name_9') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image_9')['url'] ) ) { ?>
 
@@ -946,7 +946,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price_9') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs_9') ): ?>
@@ -968,7 +968,7 @@
             <?php /*============== 10th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms2_product_name_10') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms2_product_image_10')['url'] ) ) { ?>
 
@@ -1000,7 +1000,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms2_product_price_10') ?>
                     </h4>
                     <?php if( get_field('ms2_product_pcs_10') ): ?>
@@ -1019,7 +1019,7 @@
             <?php /*============== 1st ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image')['url'] ) ) { ?>
 
@@ -1051,7 +1051,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs') ): ?>
@@ -1070,7 +1070,7 @@
             <?php /*============== 2nd ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name_2') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image_2')['url'] ) ) { ?>
 
@@ -1102,7 +1102,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price_2') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs_2') ): ?>
@@ -1122,7 +1122,7 @@
             <?php /*============== 3rd ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name_3') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image_3')['url'] ) ) { ?>
 
@@ -1154,7 +1154,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price_3') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs_3') ): ?>
@@ -1173,7 +1173,7 @@
             <?php /*============== 4th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name_4') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image_4')['url'] ) ) { ?>
 
@@ -1205,7 +1205,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price_4') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs_4') ): ?>
@@ -1224,7 +1224,7 @@
             <?php /*============== 5th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name_5') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image_5')['url'] ) ) { ?>
 
@@ -1256,7 +1256,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price_5') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs_5') ): ?>
@@ -1276,7 +1276,7 @@
             <?php /*============== 6th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name_6') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image_6')['url'] ) ) { ?>
 
@@ -1308,7 +1308,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price_6') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs_6') ): ?>
@@ -1328,7 +1328,7 @@
             <?php /*============== 7th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name_7') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image_7')['url'] ) ) { ?>
 
@@ -1360,7 +1360,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price_7') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs_7') ): ?>
@@ -1380,7 +1380,7 @@
             <?php /*============== 8th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name_8') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image_8')['url'] ) ) { ?>
 
@@ -1412,7 +1412,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price_8') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs_8') ): ?>
@@ -1432,7 +1432,7 @@
             <?php /*============== 9th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name_9') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image_9')['url'] ) ) { ?>
 
@@ -1464,7 +1464,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price_9') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs_9') ): ?>
@@ -1486,7 +1486,7 @@
             <?php /*============== 10th ITEM =========================== */ ?>
             <?php /* Check if the Item exist if theres not the whole table would not not appear*/ ?>
             <?php if( get_field('ms3_product_name_10') ) : ?>
-            <div class="card col-6 col-sm-6 col-md-4 col-lg-3  menu-category-content">
+            <div class="card col-6 col-sm-6 col-md-3 col-lg-3  menu-category-content">
                 <?php /* if Product Image is Empty then fallback image will appear */ ?>
                 <?php if( ! empty(get_field('ms3_product_image_10')['url'] ) ) { ?>
 
@@ -1518,7 +1518,7 @@
 
                     <?php endif; ?>
 
-                    <h4 class="card-price"> SR
+                    <h4 class="card-price"> Sar
                         <?php the_field('ms3_product_price_10') ?>
                     </h4>
                     <?php if( get_field('ms3_product_pcs_10') ): ?>

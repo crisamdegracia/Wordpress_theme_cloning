@@ -44,7 +44,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price') ?>
                 </h4>
                 <?php if( get_field('product_pcs') ): ?>
@@ -92,7 +92,7 @@
                 </p>
 
                 <?php endif; ?>
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price_2') ?>
                 </h4>
                 <?php if( get_field('product_pcs_2') ): ?>
@@ -141,7 +141,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price_3') ?>
                 </h4>
                 <?php if( get_field('product_pcs_3') ): ?>
@@ -190,7 +190,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price_4') ?>
                 </h4>
                 <?php if( get_field('product_pcs_4') ): ?>
@@ -239,7 +239,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price_5') ?>
                 </h4>
                 <?php if( get_field('product_pcs_5') ): ?>
@@ -288,7 +288,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price_6') ?>
                 </h4>
                 <?php if( get_field('product_pcs_6') ): ?>
@@ -338,7 +338,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price_7') ?>
                 </h4>
                 <?php if( get_field('product_pcs_7') ): ?>
@@ -386,7 +386,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price_8') ?>
                 </h4>
                 <?php if( get_field('product_pcs_8') ): ?>
@@ -434,7 +434,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price_9') ?>
                 </h4>
                 <?php if( get_field('product_pcs_9') ): ?>
@@ -482,7 +482,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('product_price_10') ?>
                 </h4>
                 <?php if( get_field('product_pcs_10') ): ?>
@@ -532,7 +532,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs') ): ?>
@@ -583,7 +583,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price_2') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs_2') ): ?>
@@ -635,7 +635,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price_3') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs_3') ): ?>
@@ -686,7 +686,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price_4') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs_4') ): ?>
@@ -737,7 +737,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price_5') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs_5') ): ?>
@@ -789,7 +789,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price_6') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs_6') ): ?>
@@ -841,7 +841,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price_7') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs_7') ): ?>
@@ -893,7 +893,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price_8') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs_8') ): ?>
@@ -945,7 +945,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price_9') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs_9') ): ?>
@@ -999,7 +999,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms2_product_price_10') ?>
                 </h4>
                 <?php if( get_field('ms2_product_pcs_10') ): ?>
@@ -1050,7 +1050,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs') ): ?>
@@ -1101,7 +1101,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price_2') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs_2') ): ?>
@@ -1153,7 +1153,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price_3') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs_3') ): ?>
@@ -1204,7 +1204,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price_4') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs_4') ): ?>
@@ -1255,7 +1255,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price_5') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs_5') ): ?>
@@ -1307,7 +1307,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price_6') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs_6') ): ?>
@@ -1359,7 +1359,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price_7') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs_7') ): ?>
@@ -1411,7 +1411,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price_8') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs_8') ): ?>
@@ -1463,7 +1463,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price_9') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs_9') ): ?>
@@ -1517,7 +1517,7 @@
 
                 <?php endif; ?>
 
-                <h4 class="card-price"> SR
+                <h4 class="card-price"> Sar
                     <?php the_field('ms3_product_price_10') ?>
                 </h4>
                 <?php if( get_field('ms3_product_pcs_10') ): ?>

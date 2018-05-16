@@ -13,10 +13,15 @@
 
 
 
+
+
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_directory')?>/js/jquery-ui/jquery-ui.min.js "></script>
+<script src="<?php bloginfo('template_directory')?>/js/floating.js"></script>
+
+<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/menu-action.js"></script>
 
 <?php wp_footer();  ?>
 
@@ -61,12 +66,12 @@
     </div>
 
     <div class="footer-col">
-        <p>WEB MASTER | KodePH </p>
+        <p> BeeDevs Designs </p>
         <div class="container">     <p> <?php 
-    echo do_shortcode('[gtranslate]'); 
-    ?></p></div>
+            echo do_shortcode('[gtranslate]'); 
+            ?></p></div>
     </div>
-   
+
 </footer>
 
 <script>
@@ -90,45 +95,6 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-rsOXjG5-vXQEjd-YFC4zBBEEAb8tl6w&libraries=places&callback=initMap" async defer></script>
 
-<script type="text/javascript">
-    var menu_category_h1 = $('#menu_section_container h1'),
-        menu_category_body = $('.menu-category-body'),
-        menu_category_text = $('.menu-category-text'),
-        menu_category_content = $('.menu-category-content')
-
-
-    menu_category_content.append('<div class="menu-pop-btn"><i class="menu-fas fa fa-eye"></i></div>');
-    menu_category_viewed = $('.menu-fas');
-    menu_pop_btn = $('.menu-pop-btn');
-
-    menu_category_body.prepend('<i class="toggle-categories fa fa-arrow-circle-up"></i>');
-    toggle_categories = $('.toggle-categories')
-
-
-    menu_category_body.hide();
-    menu_category_text.hide();
-
-    menu_category_h1.click(function() {
-        $(this).next().slideToggle();
-    })
-
-    toggle_categories.click(function() {
-
-        $(this).parent().fadeToggle();
-
-    })
-
-
-    menu_pop_btn.click(function() {
-
-        /* looking for the content of the items of the menu */
-        $(this).parent().find(menu_category_text).slideToggle();
-
-        /* toggles the eye icons */
-        $(this).find('i').toggleClass('fa-eye-slash')
-    })
-
-</script>
 
 
 </body>
