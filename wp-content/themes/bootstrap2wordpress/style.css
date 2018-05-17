@@ -753,7 +753,12 @@ h6 {
     text-rendering: optimizeLegibility;
 }
 
-
+#gtranslator {
+    position:fixed;
+    left: 0;
+    top: 93vh;
+    z-index: 999;
+}
 
 .v-header {
 
@@ -1005,12 +1010,6 @@ MENUS
 
 /* ABOUT */
 
-#about {
-    background-image: url('assets/img/sb_menu/sb-bg.jpg');
-    padding-top: 30vh;
-    height: 40vh;
-}
-
 #about h1 {
     color: darkgoldenrod;
     text-align: center;
@@ -1019,13 +1018,6 @@ MENUS
 }
 
 /* SERVICE  */
-
-#service {
-    background: #112;
-    padding: 100px 10px 60px 10px;
-    margin: 0 auto;
-
-}
 
 #service h3 {
     color: goldenrod;
@@ -1041,22 +1033,16 @@ MENUS
     margin: 30px;
 }
 
-#contact {
-    background-image: url('assets/img/unsplash/contact-bg.jpg');
-    height: 60vh;
-    font-weight: 300;
-}
-
 /*
 LAYOUT
 */
 
+/*overlay is the container of the spinner*/
 .overlay {
     height: 180px;
     width: 180px;
     margin: 0 auto;
 }
-
 .awesometext {
     padding-top: 10vh;
     text-align: center;
@@ -1083,6 +1069,7 @@ LAYOUT
 }
 
 .top-img-bg {
+    border-image: url('assets/img/unsplash/contact-bg.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1096,7 +1083,17 @@ LAYOUT
     top: 40%;
     color: #D4AF37;
     background: rgba( 0, 0, 0, 0.4);
-    text-shadow: 2px 2px #000;
+    text-shadow: 3px 3px #000;
+    font-weight: 300;
+    padding: 3vh;
+
+}
+
+.layout-body {
+    background: #112;
+    padding: 100px 10px 60px 10px;
+    margin: 0 auto;
+    display: none;
 }
 
 /*
@@ -1111,6 +1108,7 @@ footer {
     text-align: center;
     color: #fff;
     padding: 90px 0 20px 0;
+    display: none;
 
 }
 
@@ -1235,11 +1233,11 @@ footer p {
 
 
 @media only screen and ( min-width: 980px ) and ( max-width 980px) {
-    
-     .menu-category-text p {
+
+    .menu-category-text p {
         font-size: calc( 1vh +  1vw + .5vmin) ;
     }
-    
+
 }
 
 

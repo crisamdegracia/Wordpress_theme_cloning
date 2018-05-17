@@ -16,7 +16,7 @@
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="profile" href="http://gmpg.org/xfn/11">
-        
+
         <meta property="creator" content="ShiroCode" />
         <meta property="og:title" content="Sushi Boutique" />
         <meta property="og:url" content="<?php bloginfo('template_directory') ?>">
@@ -37,7 +37,7 @@
 
         <meta property="description" content=" Best sushi in Riyadh "/> 
         <meta name="keywords" content="Best Sushi in Riyadh, Japanese Restaurant in Riyadh, Japanese Food in Riyadh "/> 
-       
+
         <meta property="site_name" content="http://sushiboutiqueksa.atwebpages.com"/> 
         <meta property="image" content="<?php bloginfo('template_directory') ?>/assets/img/sb_menu.jpg"/> 
 
@@ -45,7 +45,7 @@
         <meta http-equiv="PRAGMA" content="NO-CACHE" /> 
         <meta http-equiv="EXPIRES" content="-1" />   
 
-        
+
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/js/jquery-ui/jquery-ui.min.css">
@@ -54,6 +54,7 @@
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style-b.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
         <?php wp_head(); ?>
+        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/loading.js"></script>
 
 
     </head>
@@ -85,3 +86,6 @@
 
             )) ?>
         </nav>
+        <div id="gtranslator">
+            <?php  echo do_shortcode('[gtranslate]');  ?>
+        </div>

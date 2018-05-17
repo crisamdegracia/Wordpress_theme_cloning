@@ -14,7 +14,7 @@
 
 
 
-
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/loading.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/bootstrap/js/bootstrap.min.js"></script>
@@ -66,10 +66,7 @@
     </div>
 
     <div class="footer-col">
-        <p> BeeDevs Designs </p>
-        <div class="container">     <p> <?php 
-            echo do_shortcode('[gtranslate]'); 
-            ?></p></div>
+        <p> Design and developed by <a href="https://crisamdegracia.github.io"> ChrisWebIdeas </a> &copy; 2018 All Rights Reserved  </p>
     </div>
 
 </footer>

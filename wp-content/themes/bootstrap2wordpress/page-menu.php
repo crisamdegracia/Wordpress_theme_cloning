@@ -2,12 +2,7 @@
 /* Template Name: Menu Page */
 get_header();
 ?>
-<div class="awesometext">
-    <p>SUSHI BOUTIQUE</p>
-    <div class="overlay" class="container mt-5 pt-5">
-        <div class="spinner m-auto"></div>
-    </div>
-</div>
+<?php get_template_part( 'template-parts/content' , 'page-loading') ?>
 <section class="top-img-bg" style="background-image: url('<?php bloginfo('template_directory') ?>/assets/img/unsplash/gioza-bg.jpg')">
 
     <h2 class="display-4 pl-5 float-left" id="menu-section-title">
@@ -27,6 +22,5 @@ get_header();
     ?>
 
 </section>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/loading.js"></script>
 
 <?php get_footer();

@@ -5,12 +5,13 @@ get_header();
 $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 
 ?>
+<?php get_template_part( 'template-parts/content' , 'page-loading') ?>
 
-<section id="about" class="top-img-bg">
-    <h1> ABOUT US </h1>
+<section class="top-img-bg" style="background-image: url('<?php bloginfo('template_directory') ?>/assets/img/sb_menu/sb-bg.jpg')">
+    <h2> About Us </h2>
 </section>
 
-<section id="service">
+<section id="service" class="layout-body">
     <div class="container">
         <div class="row">
 
