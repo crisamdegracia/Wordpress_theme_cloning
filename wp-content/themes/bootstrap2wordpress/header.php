@@ -17,7 +17,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="profile" href="http://gmpg.org/xfn/11">
 
-        <meta property="creator" content="ShiroCode" />
+        <meta property="creator" content="Crisam De Gracia" />
         <meta property="og:title" content="Sushi Boutique" />
         <meta property="og:url" content="<?php bloginfo('template_directory') ?>">
         <meta property="og:site_name" content="Sushi Boutique"/> 
@@ -54,8 +54,6 @@
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style-b.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
         <?php wp_head(); ?>
-        <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/loading.js"></script>
-
 
     </head>
 
@@ -70,10 +68,7 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon bg-danger"></span>
             </button>
-
-
-
-            <a class="navbar-brand" href="index.php"> <img id="header_logo" class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Sb_logo.png" alt=""> </a>
+            <a class="navbar-brand" href="index.php"> <img id="header_logo" class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/200x200sblogo.png" alt=""> </a>
 
             <?php
             wp_nav_menu( array(

@@ -313,7 +313,7 @@
 
                 <img class="card-img img-fluid" src="<?php echo get_field('product_image_7')['url'] ?>" alt="Card image">
                 <?php } else { ?>
-
+                                                                
                 <img class="card-img" src="<?php echo get_field('fallback_image')['url'] ?>" alt="Card image">
                 <?php } ?>
 

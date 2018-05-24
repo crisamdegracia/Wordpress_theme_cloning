@@ -5,7 +5,7 @@ $(function () {
     var menuSideBtnToggle = function(e){
         //btn is the pop-in pop-out arrow when clicking categories
         var btn         = $(".toggle-categories"),
-
+        
             //position of btn
             position    = btn.offset().top,
 
@@ -27,8 +27,7 @@ $(function () {
         //2500 is the location of footer
         if(   scrollTop > 200 && scrollTop < footerPosition ){  /* &&   scrollTop < 2500 */
             btn.css('display' , 'block');
-        } 
-
+        }
         else {            
             /* hides the pop-in pop-out button */
             btn.hide();
@@ -37,7 +36,7 @@ $(function () {
 
         }
 
-
+        
         //        console.log('---------------------')
         //        console.log(' Scroll Top :  ' + $(document).scrollTop())
         //        console.log(' Document Height : ' + $(document).height())
@@ -46,7 +45,6 @@ $(function () {
         //        console.log('---------------------')
 
     }
-
 
     $(window).scroll( menuSideBtnToggle );
 

@@ -2,9 +2,7 @@
 /* Template Name: Menu Page B */
 get_header();
 
-?>
-
-<?php get_template_part( 'template-parts/content' , 'page-loading') ?>
+get_template_part( 'template-parts/content' , 'page-loading') ?>
 
 <section class="top-img-bg" style="background-image: url('<?php bloginfo('template_directory') ?>/assets/img/unsplash/gioza-bg.jpg')">
 
@@ -20,12 +18,9 @@ get_header();
     get_template_part( 'template-parts/content', 'menu-b-1' );
     get_template_part( 'template-parts/content', 'menu-b-2' );
 
-
     ?>
 
 </section>
-
-
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/loading.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/loading.js"></script>
 
 <?php get_footer();

@@ -12,15 +12,12 @@
 
 
 
-
-
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/loading.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/loading.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_directory')?>/js/jquery-ui/jquery-ui.min.js "></script>
-<script src="<?php bloginfo('template_directory')?>/js/floating.js"></script>
-
+<script type="text/javascript" src="<?php bloginfo('template_directory')?>/js/jquery-ui/jquery-ui.min.js "></script>
+<script type="text/javascript"  src="<?php bloginfo('template_directory')?>/js/floating.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/menu-action.js"></script>
 
 <?php wp_footer();  ?>
@@ -44,7 +41,7 @@
                     <p>Diplomatic Quarter - Riyadh, KSA</p>
                     <p>Tel: 011 4810569 ; 011 4810621</p>
                     <h3>Business Hours</h3>
-                    <p>Mon~Thu: 12:00 AM ~ 11:30 PM</p>
+                    <p>Mon~Thu: 12:00 PM ~ 11:30 PM</p>
                     <p>Fri: 1:30 PM ~ 11:30 PM </p>
                     <p> Sat-Sun: 12:00 PM~11:30 PM</p>
 
@@ -66,7 +63,8 @@
     </div>
 
     <div class="footer-col">
-        <p> Design and developed by <a href="https://crisamdegracia.github.io"> ChrisWebIdeas </a> &copy; 2018 All Rights Reserved  </p>
+        <p> Design and developed by <a href="https://crisamdegracia.github.io"> ChrisWebIdeas </a> </p>
+        <p>&copy; 2018 All Rights Reserved </p> 
     </div>
 
 </footer>

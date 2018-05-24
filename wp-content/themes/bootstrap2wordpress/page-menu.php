@@ -1,8 +1,9 @@
 <?php 
 /* Template Name: Menu Page */
 get_header();
-?>
-<?php get_template_part( 'template-parts/content' , 'page-loading') ?>
+
+get_template_part( 'template-parts/content' , 'page-loading') ?>
+
 <section class="top-img-bg" style="background-image: url('<?php bloginfo('template_directory') ?>/assets/img/unsplash/gioza-bg.jpg')">
 
     <h2 class="display-4 pl-5 float-left" id="menu-section-title">
@@ -17,8 +18,6 @@ get_header();
     <?php 
     get_template_part( 'template-parts/content', 'menu-section' );
     get_template_part( 'template-parts/content', 'menu-section-2' );
-
-
     ?>
 
 </section>

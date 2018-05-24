@@ -120,6 +120,8 @@
         <a href="#" onclick="doGTranslate('en|ar');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Arabic" class="nturl"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/ar.png" height="16" width="16" alt="ar" /> Arabic</a><a href="#" onclick="doGTranslate('en|zh-CN');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Chinese (Simplified)" class="nturl"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/zh-CN.png" height="16" width="16" alt="zh-CN" /> Chinese (Simplified)</a><a href="#" onclick="doGTranslate('en|nl');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Dutch" class="nturl"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/nl.png" height="16" width="16" alt="nl" /> Dutch</a><a href="#" onclick="doGTranslate('en|en');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="English" class="nturl selected"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/en.png" height="16" width="16" alt="en" /> English</a><a href="#" onclick="doGTranslate('en|fr');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="French" class="nturl"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/fr.png" height="16" width="16" alt="fr" /> French</a><a href="#" onclick="doGTranslate('en|de');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="German" class="nturl"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/de.png" height="16" width="16" alt="de" /> German</a><a href="#" onclick="doGTranslate('en|it');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Italian" class="nturl"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/it.png" height="16" width="16" alt="it" /> Italian</a><a href="#" onclick="doGTranslate('en|pt');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Portuguese" class="nturl"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/pt.png" height="16" width="16" alt="pt" /> Portuguese</a><a href="#" onclick="doGTranslate('en|ru');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Russian" class="nturl"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/ru.png" height="16" width="16" alt="ru" /> Russian</a><a href="#" onclick="doGTranslate('en|es');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Spanish" class="nturl"><img data-gt-lazy-src="//localhost/wp-content/plugins/gtranslate/flags/16/es.png" height="16" width="16" alt="es" /> Spanish</a></div>
 </div>
 <script type="text/javascript">
+    
+    
     jQuery('.switcher .selected').click(function() {
         jQuery('.switcher .option a img').each(function() {
             if (!jQuery(this)[0].hasAttribute('src')) jQuery(this).attr('src', jQuery(this).attr('data-gt-lazy-src'))
@@ -129,6 +131,8 @@
             jQuery('.switcher .selected a').toggleClass('open')
         }
     });
+    
+    
     jQuery('.switcher .option').bind('mousewheel', function(e) {
         var options = jQuery('.switcher .option');
         if (options.is(':visible')) options.scrollTop(options.scrollTop() - e.originalEvent.wheelDelta);

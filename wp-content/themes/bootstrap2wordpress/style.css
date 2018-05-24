@@ -755,8 +755,8 @@ h6 {
 
 #gtranslator {
     position:fixed;
-    left: 0;
-    top: 93vh;
+    left: 1vh;
+    top: 12vh;
     z-index: 999;
 }
 
@@ -871,6 +871,7 @@ MENUS
     padding: 30px;
     text-shadow: 1px 1px .2em #000000;
     margin-bottom: 30px;
+    border: 1px solid #444;
 }
 
 .menu-header-bg:hover {
@@ -879,17 +880,15 @@ MENUS
 
 .menu-category-body {
     margin-bottom:  40px;
-    /*    display: none;    */
-    /*    padding: 0 0 0 0 !important;*/
-    /*    border: 1px solid red;*/
 }
 
 
 .menu-category-content {
     margin: 7px 0;
-    height: 40vh;
+    height: 35vh;
     padding: 0 15px;
     background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #ddd;
 }
 
 .menu-pop-the-category {
@@ -907,7 +906,6 @@ MENUS
 }
 
 /* container of the menu items */
-
 .menu-category-text {
     position: absolute;
     left: 0;
@@ -924,16 +922,18 @@ MENUS
     color: #dd5638;
 }
 
+
+.menu-category-text {
+    text-align: center;
+}
 .menu-category-text p {
-    position: absolute;
-    top: 15%;
     line-height: 100%;
     font-size: calc( .5vh + 1vw + .5vmin );
 }
 
 .menu-category-content .card-title {
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 0;
     background: rgba(0,0,0,.9);
     font-size: calc(1em + 1vh + .5vmin);
@@ -955,7 +955,6 @@ MENUS
 }
 
 /* menu product item pcs */
-
 .menu-category-text h6 {
     font-size: calc( .5vw + .5vh + .5vmin);
     position: absolute;
@@ -963,6 +962,7 @@ MENUS
     bottom: 2%;
 }
 
+/* btn for closing each categories*/
 .fa-close {
     border-radius: 50px;
     padding: 20px 6px 40px 6px;
@@ -976,6 +976,7 @@ MENUS
     z-index: 100;
     color: darkgoldenrod;
 }
+
 
 .card-price {
     font-size: calc(.7vw + 2vh + .5vmin);
@@ -991,7 +992,6 @@ MENUS
 .menu-category-text h3,
 .menu-category-text h6,
 .menu-category-text p {
-    /*	background: rgba(0,0,0, 0.2);*/
     color: #ddd;
 }
 
@@ -1152,8 +1152,18 @@ footer p {
     color: #999;
 }
 
+.footer-col p a {
+    color: #333;
+    border-bottom: 1.3px solid salmon; 
+}
+.footer-col p a:hover {
+    transition: 1.3s ease-in-out;
+    color: red;
+    border-bottom: 1px solid #333;
+}
 .footer-col p {
-    color: #999;
+    color: #555;
+    line-height: .5;
 }
 
 #map {
@@ -1181,11 +1191,6 @@ footer p {
     }
     .menu-category-eng {
         font-size: 1em;
-    }
-    .menu-category-content {
-        margin: 7px 0;
-        height: 25vh;
-        padding: 0 2px;
     }
     .menu-category-text h6 {
         font-size: .7em;
@@ -1232,13 +1237,111 @@ footer p {
 }
 
 
-@media only screen and ( min-width: 980px ) and ( max-width 980px) {
+
+/*extra small devices and lower */
+@media (max-width:576px){
+
+    /*main body of each menu item*/
+    .menu-category-content {
+        height: calc(7vh + 20vw + 4vmin);
+        font-size: calc(2vh + 1vw + .3vmin);
+
+    }
+
+    .menu-category-content img {
+        position: relative;
+        top: 18%;
+        left: 2%;
+        padding: 0;
+        height: 75%;
+        width: 100%;
+    }
+    /*main body of eye btn*/
+    .menu-pop-btn {
+        height: calc( 1vh + 3vw + .2vmin );
+        width: calc( 1vh + 3vw + .2vmin );
+        border: none;
+        background: none;
+    }
+
+    /* side button to close categories*/
+    .fa-close {
+        border: 2px solid red;
+        color: #fff;
+    }
+
+
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .menu-category-content {
+        height: calc(8vh + 20vw + 4vmin);
+
+    }
+
+    .menu-category-content img {
+        position: relative;
+        top: 25%;
+        left: 10%;
+        padding: 0;
+        height: 65%;
+        width: 77%;
+
+    }
 
     .menu-category-text p {
-        font-size: calc( 1vh +  1vw + .5vmin) ;
+        font-size: 1em;
+    }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .menu-category-content {
+        height: 30vh;
+    }
+    .menu-category-content  .card-title {
+        font-size: calc(.5em + .8vw + .5vmin);
+    }
+
+    .menu-category-content img {
+        position: relative;
+        top: 25%;
+        left: 5%;
+        padding: 0;
+        height: 70%;
+        width: 93%;
+    }
+    .menu-category-text h6 {
+        font-size: calc( .6vw + .5vh + .5vmin);
+        position: absolute;
+        left:60%;
+        bottom: 2%;
     }
 
 }
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+    .menu-category-content {
+        height: calc( 10vh + 10vw + 10vmin);
+    }
+    .menu-category-content img {
+
+
+        position: relative;
+        top: 25%;
+        left: 5%;
+        padding: 0;
+        height: 60%;
+        width: 68%;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+}
+
+
 
 
 
