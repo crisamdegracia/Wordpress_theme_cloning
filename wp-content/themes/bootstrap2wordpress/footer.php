@@ -63,8 +63,7 @@
     </div>
 
     <div class="footer-col">
-        <p> Design and developed by <a href="https://crisamdegracia.github.io"> ChrisWebIdeas </a> </p>
-        <p>&copy; 2018 All Rights Reserved </p> 
+        <p> site by <a href="https://crisamdegracia.github.io"> CrisamDeGracia </a> &copy; 2018 </p>
     </div>
 
 </footer>
