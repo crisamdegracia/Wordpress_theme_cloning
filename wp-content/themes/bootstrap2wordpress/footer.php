@@ -17,8 +17,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/js/jquery-ui/jquery-ui.min.js "></script>
+
+<!-- add the script in menu page-->
+<?php $page_title = $wp_query->post->post_title; ?>
+<?php  if( $page_title == 'Menu') { ?>
 <script type="text/javascript"  src="<?php bloginfo('template_directory')?>/js/floating.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/menu-action.js"></script>
+<?php }  ?>
+
 
 <?php wp_footer();  ?>
 

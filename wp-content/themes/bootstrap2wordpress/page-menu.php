@@ -2,16 +2,20 @@
 /* Template Name: Menu Page */
 get_header();
 
-get_template_part( 'template-parts/content' , 'page-loading') ?>
+$thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 
-<section class="top-img-bg" style="background-image: url('<?php bloginfo('template_directory') ?>/assets/img/unsplash/gioza-bg.jpg')">
+?>
+<?php get_template_part( 'template-parts/content' , 'page-loading') ?>
+<?php if( has_post_thumbnail() ) : ?>
+<section class="top-img-bg" style="background-image: url('<?php echo  $thumbnail_url; ?>')">
 
     <h2 class="display-4 pl-5 float-left" id="menu-section-title">
-        <?php the_title(); ?>
+        <?php  the_title(); ?>
     </h2>
 </section>
+<?php  endif ; ?>
 
-<section id="menu-page-x">
+<section id="menu-page-x" class="forTheLoading">
 
     <h3 class="menu-header">Menu Categories</h3>
 

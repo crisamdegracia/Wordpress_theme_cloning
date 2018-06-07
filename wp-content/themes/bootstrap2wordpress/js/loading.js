@@ -9,7 +9,7 @@
         layout_body      = document.getElementsByClassName('layout-body'),
         footer           = document.getElementsByTagName('footer'),
         gTranslate       = document.getElementById('gtranslator'),
-
+        toBlock      = document.getElementsByClassName('forTheLoading');
 
 
         /* function for element thas has classes for display:none or block */
@@ -27,11 +27,12 @@
 
     window.addEventListener('load', function(e){
         classEl( loader,'none' );
-        classEl( topImageBg ,'block' );
         classEl( awesometxt ,'none' );
-        classEl( footer ,'block' );
+        classEl( topImageBg ,'block' );
         classEl( layout_body ,'block' );
-        IDEl( menuMainBody , 'block' );
+        classEl( footer ,'block' );
+        classEl( toBlock ,'block' );
+       
     })
 
 

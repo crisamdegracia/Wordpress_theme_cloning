@@ -17,8 +17,7 @@
 	<?php bootstrap2wordpress_post_thumbnail(); ?>
 	
 	<div class="entry-content">
-	
-	<h1>WAHAHAH</h1>
+
 		<?php
 //			the_content();
 //

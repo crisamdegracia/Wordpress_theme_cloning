@@ -1,4 +1,4 @@
-$(function(){
+(function(){
     
 
 var     menu_category_h1 = $('#menu_section_container h1'),
